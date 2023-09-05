@@ -1,0 +1,27 @@
+.containerTotal{
+    margin: 40px 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.containerCalculadora{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.containerValor, .containerResultado{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.containerCalculador{
+    display: flex;
+    justify-content: center;
+}
+.containerResultado{
+    align-items: center;
+    margin: 10px 0;
+}
+.containerResultado input{
+    width: 365px;
+}

@@ -1,0 +1,30 @@
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+  crossorigin="anonymous"
+/>
+<div class="containerTotal">
+<div class="containerCalculadora">
+  <div class="containerValor">
+    <label for="">Numero 1</label>
+    <input type="number" [(ngModel)]="numero1"/>
+  </div>
+  <div class="containerValor">
+    <label for="">Numero 2</label>
+    <input type="number" [(ngModel)]="numero2"/>
+  </div>
+</div>
+  <div class="containerCalculador">
+   <app-calculador (eventoEmitido)="accionLimpiar()"(eventoOperacion)="accionCalcular($event)"></app-calculador>
+  </div>
+  <div class="containerResultado">
+    <label for="">Resultado:</label>
+    <input type="number"[(ngModel)]="resultado"/>
+  </div>
+</div>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"
+></script>
